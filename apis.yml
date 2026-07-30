@@ -1,8 +1,29 @@
 aid: kezaihui
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/kezaihui.png
 name: Kezaihui
-description: 'Kezaihui is a company surfaced as a portfolio company of dcm-ventures and added to the API
-  Evangelist network as a stub for enrichment. Sector: enterprise. This profile is a lead awaiting the
-  enrichment pipeline.'
+description: 'Kezaihui (再惠 / Zaihuihui (Shanghai) Network Technology Co., Ltd.) is a
+  Shanghai-based Chinese SaaS platform for local-life-service commerce, providing offline
+  merchants — primarily mid-tier restaurants plus entertainment, beauty, and hospitality
+  businesses — with one-stop store-opening and digital-operations tooling. Founded around
+  2012, the company offers private-domain member and community management, trading-platform
+  shop diagnostics and automated strategy recommendations, content-creator (influencer)
+  marketing, multi-channel precision ad delivery, and the Hui Shenghuo (惠生活) rights-aggregation
+  platform, helping merchants operate across Meituan, Douyin, Xiaohongshu, and Taobao.
+  It reports serving hundreds of thousands of merchants across dozens of Chinese cities
+  with more than 1,000 employees. Surfaced as a portfolio company of DCM Ventures and
+  added to the API Evangelist network; no public developer program or API surface was
+  found during enrichment.'
 url: https://raw.githubusercontent.com/api-evangelist/kezaihui/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +33,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
 - Enterprise
+- SaaS
+- Local Commerce
+- China
+- Restaurant Technology
+- Merchant Marketing
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +49,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/kezaihui-domain-security.yml
 - type: Website
   url: http://www.kezaihui.com/
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
